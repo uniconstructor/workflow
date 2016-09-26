@@ -105,7 +105,7 @@ class RoutesCommand extends Command {
   protected function appendRoutes( $name = '' )
   {
     $app = app();
-    $routes_file = $this->laravel->path.'/http/routes.php';
+    $routes_file = $this->laravel->path.'/Http/routes.php';
     $workflow_routes = $app['view']->make('workflow::generators.routes')
       ->with('name', $name)
       ->render();
